@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/menu_free">
+  
+<LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	<TextView 
+		  android:text="カフェさがし"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="47px"></TextView>
+</LinearLayout> 
+
+<LinearLayout 
+	android:id="@+id/footer"
+  	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:layout_alignParentBottom="true"
+	>
+	
+	<LinearLayout
+	  android:id="@+id/buttonList1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:background="#F9F5D6"
+	  android:layout_gravity="bottom"
+	  android:paddingLeft="10px"
+	  android:paddingBottom="10px"
+	  >
+	  <Button  
+			android:id="@+id/stationSearchButton" 
+			android:layout_width="100px" 
+			android:layout_height="50px"
+			android:background="@drawable/ekikara"
+			></Button>
+		<Button android:background="@drawable/last" 
+				android:id="@+id/lastSearchButton" 
+				android:layout_width="100px" 
+				android:layout_height="50px"
+				
+				></Button>
+		<Button android:background="@drawable/history" 
+				android:id="@+id/historySearchButton" 
+				android:layout_width="100px" 
+				android:layout_height="50px"
+				
+				></Button>		
+	</LinearLayout> 
+	<LinearLayout
+	  android:id="@+id/buttonList2"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:background="#F9F5D6"
+	  android:layout_gravity="bottom"
+	  android:paddingTop="5px"
+	  android:paddingBottom="30px"
+	  android:paddingLeft="10px"
+	  >
+	  <Button android:background="@drawable/tweet" 
+			android:id="@+id/twitPrefButton" 
+			android:layout_width="100px" 
+			android:layout_height="50px"
+			android:paddingLeft="10px"
+			></Button>			
+	<Button android:background="@drawable/help_2" 
+			android:id="@+id/helpButton" 
+			android:layout_width="100px" 
+			android:layout_height="50px"
+			
+			></Button>	
+	<Button android:background="@drawable/master" 
+			android:id="@+id/masterUpdateButton" 
+			android:layout_width="100px" 
+			android:layout_height="50px"
+			
+			></Button>
+	</LinearLayout> 
+	<include layout="@layout/inc_ad" />
+</LinearLayout>						
+
+
+
+
+</RelativeLayout>

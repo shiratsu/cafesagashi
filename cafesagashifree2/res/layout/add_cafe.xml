@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" android:layout_height="fill_parent"
+ android:orientation="vertical" android:background="#F9F5D6">
+ 	
+ 	<LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	  
+	     
+	<TextView 
+		  android:text="登録・編集"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="60px"></TextView>
+</LinearLayout> 
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:orientation="vertical">
+	<include layout="@layout/inc_ad" />
+	
+	<LinearLayout
+	  android:id="@+id/Layout1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  >
+	   	 
+			 <TextView android:id="@+id/storeCategoryCaption"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="wrap_content"
+			  android:text="店舗のカテゴリ："
+			  android:textColor="#000000" />
+			 
+			<Spinner android:id="@+id/storeCategory" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"></Spinner>
+	</LinearLayout>	
+	<LinearLayout
+	  android:id="@+id/Layout1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal">	
+	 
+			 <TextView android:id="@+id/storeNameCaption"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="wrap_content"
+			  android:text="支店名："
+			  android:textColor="#000000" />
+			   <EditText android:id="@+id/storeSubName"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="fill_parent"
+			  android:inputType="text"
+			  android:hint="支店名"
+			   />
+	</LinearLayout>	
+	<LinearLayout
+	  android:id="@+id/Layout1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal">	
+			 <TextView android:id="@+id/storeAddressCaption"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="wrap_content"
+			  android:text="住所："
+			  android:textColor="#000000" />
+			   <EditText android:id="@+id/storeAddress"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="fill_parent"
+			  android:inputType="text"
+			  android:hint="住所"
+			   />
+	</LinearLayout>	
+	<LinearLayout
+	  android:id="@+id/Layout1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal">		 
+			 <TextView android:id="@+id/phoneNumberCaption"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="wrap_content"
+			  android:text="電話番号："
+			  android:textColor="#000000" />
+			   <EditText android:id="@+id/phoneNumber"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="fill_parent"
+			  android:inputType="text"
+			  android:hint="電話番号"
+			   />
+	</LinearLayout>	
+	<LinearLayout
+	  android:id="@+id/Layout1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal">		 
+			 <TextView android:id="@+id/phoneNumberCaption"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="wrap_content"
+			  android:text="キャプション："
+			  android:textColor="#000000" />
+			   <EditText android:id="@+id/storeCaption"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="fill_parent"
+			  android:inputType="text"
+			   />
+	</LinearLayout>	
+	<LinearLayout
+	  android:id="@+id/Layout1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal">		
+			 <TextView android:id="@+id/kodawariCaption"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="wrap_content"
+			  android:text="こだわり："
+			  android:textColor="#000000" />
+			 <TextView android:id="@+id/kodawariText"
+			  android:layout_height="wrap_content" 
+			  android:layout_width="fill_parent"
+			  android:textColor="#000000" />
+	</LinearLayout>	
+	<LinearLayout
+	  android:id="@+id/Layout1"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal">			
+		
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content" 
+				android:id="@+id/kodawariSendButton" 
+				android:text="こだわりを設定する"></Button>
+	</LinearLayout>		
+	
+	<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+		<Button 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:id="@+id/sendButton"
+			android:text="送信する"
+			android:layout_marginLeft="240px"></Button>	
+	</LinearLayout>
+</LinearLayout>	
+	<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_alignParentBottom="true">
+		
+	</LinearLayout>		
+</LinearLayout>

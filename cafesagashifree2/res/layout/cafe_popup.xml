@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="220px" android:layout_height="60px"
+ android:orientation="horizontal" android:background="#000000">
+
+	 <TextView android:id="@+id/cafename_view"
+	  android:layout_height="wrap_content" 
+	  android:layout_width="170px"
+	  android:layout_marginTop="1px"
+	  android:layout_marginLeft="5px" />
+	 <Button android:text="詳細へ" 
+				android:id="@+id/detailButton" 
+				android:layout_width="50px" 
+				android:layout_height="50px"
+				android:layout_marginTop="5px"
+				android:layout_marginRight="5px"
+				 ></Button>	
+ </LinearLayout>

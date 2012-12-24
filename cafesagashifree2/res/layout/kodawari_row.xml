@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45px"
+    android:orientation="horizontal"
+    android:background="#F9F5D6">
+   
+	<CheckedTextView 
+        android:layout_width="fill_parent" 
+        android:layout_alignParentLeft="true" 
+        android:text=""
+        android:textColor="#000000"
+        android:id="@+id/kodawariChecked" 
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="10px"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple">
+    </CheckedTextView>
+</LinearLayout>

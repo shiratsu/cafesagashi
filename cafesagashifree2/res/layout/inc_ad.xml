@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+>
+
+<RelativeLayout
+android:id="@+id/top"
+android:gravity="center_vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+>
+<!-- <jp.Adlantis.Android.AdlantisView
+	    android:id="@+id/adView" 
+	    android:layout_width="fill_parent"
+		android:layout_height="50dip"
+		android:scrollbars="none" /> -->
+<jp.co.cayto.appc.sdk.android.LinearFloatView
+			android:id="@+id/floatview_1" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			appc_floatview_mode="B"
+			android:gravity="center"
+			appc_skincolor_mode="green"
+	/>		
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="/Users/shiratsu/Desktop/cafe/adlantis.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/shiratsu/Desktop/cafe/appc_sdk_2.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/shiratsu/Desktop/cafe/twitter4j-core-2.2.2-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

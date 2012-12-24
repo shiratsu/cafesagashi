@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="#F9F5D6">
+  <LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	     
+	<TextView 
+		  android:text="ツイートページ"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="40px"></TextView>
+</LinearLayout> 
+ 
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:orientation="vertical">
+		
+	<TextView android:id="@+id/tweetCaption" 
+			  android:layout_width="fill_parent"  
+			  android:layout_height="wrap_content"
+			  android:textColor="#000000"
+			  android:padding="15px"></TextView>
+	<EditText android:id="@+id/tweetContent" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="70px"
+			  android:padding="15px"></EditText>
+	<Button android:text="ツイートする" 
+			android:id="@+id/sendTweetButton" 
+			android:layout_width="fill_parent" 
+			android:layout_height="60px"
+			android:padding="15px"></Button>				
+
+
+
+</LinearLayout>
+<include layout="@layout/inc_ad" />
+
+</LinearLayout>

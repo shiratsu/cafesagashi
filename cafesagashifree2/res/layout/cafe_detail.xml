@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F9F5D6"
+    >
+    <LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	  <Button android:text="メール" 
+			android:id="@+id/btnMail" 
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="60dip"
+			android:layout_height="wrap_content"></Button>		
+	  <Button android:text="NaviConに連携する" 
+			android:id="@+id/navicon1" 
+			android:layout_width="wrap_content"
+			android:layout_marginRight="2dip"
+			android:layout_height="wrap_content"></Button>	
+	    
+	</LinearLayout>
+    <include layout="@layout/inc_ad" />
+	<ScrollView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:fadingEdgeLength="50dip"
+		    android:background="#F9F5D6">
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:stretchColumns="1"
+					android:shrinkColumns="1"
+					android:background="#F9F5D6">
+	
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingTop="2dip"
+				        android:paddingBottom="2dip" >
+				        <TextView
+				                android:text="■店舗名："
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:textColor="#000000"
+				                android:textSize="20sp" />
+				        <TextView
+				                android:id="@+id/storeName"
+				                android:layout_width="fill_parent"
+				                android:layout_height="wrap_content"
+				                android:paddingLeft="2px"
+				                android:textColor="#000000"
+				                android:textSize="20sp"
+				                 />        
+				</TableRow>
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingBottom="2dip">
+				        <Button android:id="@+id/btnNice" 
+				        		android:text="NICE!\n(この店舗が気に入ったらココをタップ)" 
+				        		android:layout_height="wrap_content" 
+				        		android:layout_width="wrap_content"
+				        		android:layout_span="3"></Button>     
+				        
+				</TableRow>
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingBottom="2dip">
+				        <TextView
+				                android:text="■住所："
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:textColor="#000000" />
+				        <TextView
+				                android:id="@+id/storeAddress"
+				                android:layout_width="fill_parent"
+				                android:layout_height="wrap_content"
+				                android:paddingLeft="2px"
+				                android:textColor="#000000"
+				                android:layout_span="2" />        
+				</TableRow>
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingBottom="2dip">
+				        <TextView
+				                android:text="■電話番号："
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:textColor="#000000" />
+				        <TextView
+				                android:id="@+id/phoneNumber"
+				                android:layout_width="fill_parent"
+				                android:layout_height="wrap_content"
+				                android:paddingLeft="2px"
+				                android:textColor="#000000" />
+				         <Button  
+							android:id="@+id/btnPhone" 
+							android:layout_width="30px" 
+							android:layout_height="30px"
+							android:background="@drawable/tel_30"></Button>              
+				</TableRow>
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingBottom="4dip">
+				        <TextView
+				                android:text="■こだわり："
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:textColor="#000000" />
+				        <TextView
+				                android:id="@+id/kodawari"
+				                android:layout_width="fill_parent"
+				                android:layout_height="wrap_content"
+				                android:paddingLeft="2px"
+				                android:textColor="#000000"
+				                android:layout_span="2" />        
+				</TableRow>
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingBottom="4dip">
+				        <view class="jp.co.teamenjoy.cafesagashi.free.view.ItemsMapDetailView"
+								android:id="@+id/map_view" 
+								android:layout_width="fill_parent"
+								android:layout_height="186px" 
+								android:enabled="true"
+								android:clickable="true"
+								android:layout_span="3"
+								android:apiKey="@string/api_key" />  
+				 </TableRow>
+				 
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingBottom="2dip">
+				        
+				        <Button android:text="店舗情報を編集" 
+							android:id="@+id/btnUpdate" 
+							android:layout_width="wrap_content" 
+							android:layout_height="50px"></Button>
+							
+						<Button android:text="ツイートする" 
+							android:id="@+id/btnTweet" 
+							android:layout_width="wrap_content" 
+							android:layout_height="50px"
+							android:layout_span="2"></Button>    
+							
+				</TableRow>	
+				<TableRow
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingBottom="2dip">
+				        
+				        <TextView
+				                android:id="@+id/userSendMessage"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_span="3"
+				                android:paddingLeft="5px"
+				                android:textColor="#000000"
+				                 />
+				                      
+				</TableRow>	
+			</TableLayout>	
+
+	</ScrollView> 
+</LinearLayout>
+

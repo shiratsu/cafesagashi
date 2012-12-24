@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" android:layout_height="fill_parent"
+ android:orientation="vertical" android:background="#F9F5D6">
+ 	
+ 	<LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	  
+	     
+	<TextView 
+		  android:text="ツイート設定"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="47px"></TextView>
+</LinearLayout> 
+	<include layout="@layout/inc_ad" />
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:stretchColumns="1"
+			android:shrinkColumns="1"
+			android:layout_weight="1"
+			android:background="#F9F5D6">
+	
+	<TableRow
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+		 <TextView android:id="@+id/Caption"
+		  android:layout_height="wrap_content" 
+		  android:layout_width="fill_parent"
+		  android:text="ツイート設定"
+		  android:textColor="#000000"
+		  android:paddingLeft="10px" />
+		 
+		<CheckBox android:id="@+id/TwitPref" 
+				  android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content"></CheckBox>
+	</TableRow>	
+	<TableRow
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content">
+	 
+		 <TextView android:id="@+id/storeNameCaption"
+		  android:layout_height="wrap_content" 
+		  android:layout_width="wrap_content"
+		  android:text="TwitterId："
+		  android:textColor="#000000"
+		  android:paddingLeft="10px" />
+		   <EditText android:id="@+id/twitterIdText"
+		  android:layout_height="wrap_content" 
+		  android:layout_width="fill_parent"
+		  android:inputType="text"
+		   />
+	</TableRow>
+ 	<TableRow
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content">
+		 <TextView android:id="@+id/storeAddressCaption"
+		  android:layout_height="wrap_content" 
+		  android:layout_width="wrap_content"
+		  android:text="パスワード："
+		  android:textColor="#000000"
+		  android:paddingLeft="10px" />
+		   <EditText android:id="@+id/password"
+		   	android:password="true"
+		  	android:layout_height="wrap_content" 
+		  	android:layout_width="fill_parent"
+		  	android:inputType="text"
+		   />
+	</TableRow>		   
+</TableLayout>
+
+</LinearLayout>

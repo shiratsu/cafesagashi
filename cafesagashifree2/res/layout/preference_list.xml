@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F9F5D6"
+    >
+    <LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	  
+	     
+	<TextView 
+		  android:text="検索オプション"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="41px"></TextView>
+</LinearLayout> 
+	<include layout="@layout/inc_ad" />	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="horizontal">
+	    <!-- 一覧表示用リスト -->
+		<ListView
+		        android:id="@id/android:list"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:cacheColorHint="#000000"
+		        android:divider="#DFDFDF"
+		        android:listSelector="@xml/list_selector"
+				android:dividerHeight="2sp" />
+	</LinearLayout>        
+
+</LinearLayout>
+

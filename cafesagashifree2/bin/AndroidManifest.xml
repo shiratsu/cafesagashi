@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jp.co.teamenjoy.cafesagashi.free"
+      android:versionCode="14"
+      android:installLocation="auto"
+      android:versionName="2.0.4">
+      <supports-screens
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="false"
+	/>
+    <application android:icon="@drawable/icon4848_free" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name=".SplashPageActivity" android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+				
+            </intent-filter>
+            
+        </activity>
+         <activity android:name=".TopPageActivity" android:label="カフェさがしトップページ" android:screenOrientation="portrait"></activity>
+         <activity android:name=".AreaPageActivity" android:label="エリアページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".PrefPageActivity" android:label="都道府県一覧トップページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".PreferencePageActivity" android:label="検索設定ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".LinePageActivity" android:label="路線一覧ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".StationPageActivity" android:label="駅一覧ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".MapPageActivity" android:label="地図検索ページ" android:screenOrientation="portrait">
+		 </activity>
+		 
+		 <activity android:name=".CafeDetailPageActivity" android:label="カフェ詳細ページ" android:screenOrientation="portrait">
+		 	
+             
+		 </activity>
+		 <activity android:name=".CafeListPageActivity" android:label="カフェ一覧ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".MasterDataPageActivity" android:label="マスター更新ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".AddCafePageActivity" android:label="カフェ追加ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".KodawariPageActivity" android:label="こだわり一覧ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".HelpPageActivity" android:label="ヘルプページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".TwitPrefPageActivity" android:label="ツイッター設定ページ" android:screenOrientation="portrait"></activity>
+		 <activity android:name=".TwitPageActivity" android:label="ツイートページ" android:screenOrientation="portrait"></activity>
+		 
+		 <activity android:name=".SearchHistoryPageActivity" android:label="検索履歴一覧ページ" android:screenOrientation="portrait"></activity>
+    <uses-library android:name="com.google.android.maps"></uses-library>
+	<meta-data android:name="Adlantis_Publisher_ID" android:value="MTc4NjM%3D%0A" />
+	<meta-data android:name="appc_media_key" android:value="a2f063a070f1b58f48158d6d3887fe65a8ac4335" />
+	  
+	  <!--  以下、必ず固定でそのまま貼り付けてください。 -->
+        
+	 <!-- 利用規約画面: 旧バージョンとのコンパチブル用-->
+     <activity android:name="jp.co.cayto.appc.sdk.android.AgreementStarter"
+                             android:label="@string/app_name"  android:noHistory="true">
+
+     </activity>
+	 <activity android:name="jp.co.cayto.appc.sdk.android.FloatContents"
+               android:label="appC Contents" >
+     	</activity>
+     	<receiver android:name="jp.co.cayto.appc.sdk.android.background.BgAppReceiver">
+         	<intent-filter>
+             	<action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.search" />
+             	<action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.set" />
+             	<action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.remove" />
+         	</intent-filter>
+    		 </receiver>
+	<service
+		android:name="jp.co.cayto.appc.sdk.android.background.IDService"
+		android:process=":outerProcessX" />
+     	<receiver  android:name="jp.co.cayto.appc.sdk.android.background.BootStrap"
+             android:enabled="true"
+             android:exported="false"
+             android:label="BootStrap">
+		   <intent-filter>
+               <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+         <intent-filter>
+           	 <action android:name="android.intent.action.PACKAGE_ADDED" />
+               <action android:name="android.intent.action.PACKAGE_REMOVED" />
+               <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="cafesagashi" android:host="top" />
+            </intent-filter>
+		</receiver>
+		<!-- appC 基本設定 終了 -->
+</application>
+	<!-- ワイヤレスネットワークによる位置情報取得許可  -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- ＧＰＳによる位置情報取得許可  -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- インターネット接続許可  -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="android.permission.READ_ATTACHMENT"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-sdk android:minSdkVersion="3" />
+</manifest> 

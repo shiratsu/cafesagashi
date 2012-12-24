@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="#F9F5D6">
+  
+<LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+
+	<TextView 
+		  android:text="エリアを選択"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="50px"></TextView>
+</LinearLayout>
+<include layout="@layout/inc_ad" />
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/select_province_map"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#F9F5D6"
+  android:padding="10dip">
+  
+	<Button android:id="@+id/CenterPoint" 
+			android:layout_centerInParent="true"
+			android:layout_width="10dip" 
+			android:layout_height="10dip"
+			android:visibility="invisible"
+			></Button>
+	<Button android:id="@+id/Kinki"
+			android:text="近畿"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@id/CenterPoint"
+			android:layout_width="40px" 
+			android:layout_height="101px"
+			android:layout_margin="1px"
+			android:background="#CDAE7F"
+			></Button>
+	<Button android:id="@+id/KoshinHokuriku"
+			android:text="甲信越/北陸"
+			android:textSize="10sp"
+			android:layout_toRightOf="@id/Kinki"
+			android:layout_alignTop="@id/Kinki"
+			android:layout_width="60px" 
+			android:layout_height="50px"
+			android:layout_marginRight="1px"
+			android:layout_marginBottom="1px"
+			android:background="#CDAE7F"
+			></Button>
+	<Button android:id="@+id/Tokai"
+			android:text="東海"
+			android:layout_toRightOf="@id/Kinki"
+			android:layout_below="@id/KoshinHokuriku"
+			android:layout_width="60px" 
+			android:layout_height="50px"
+			android:layout_marginRight="1px"
+			android:background="#CDAE7F"
+			></Button>
+	<Button android:id="@+id/Kanto"
+			android:text="関東"
+			android:layout_toRightOf="@id/KoshinHokuriku"
+			android:layout_alignBottom="@id/Tokai"
+			android:layout_width="50px" 
+			android:layout_height="105px"
+			android:background="#CE8E75"
+			></Button>
+	<Button android:id="@+id/Tohoku"
+			android:text="東北"
+			android:layout_toRightOf="@id/KoshinHokuriku"
+			android:layout_above="@id/Kanto"
+			android:layout_width="50px" 
+			android:layout_height="105px"
+			android:layout_marginBottom="1px"
+			
+			android:background="#CE6E6B"
+			></Button>
+	<Button android:id="@+id/Hokkaido"
+			android:text="北海道"
+			android:layout_toRightOf="@id/KoshinHokuriku"
+			android:layout_above="@id/Tohoku"
+			android:layout_width="70px" 
+			android:layout_height="60px"
+			android:layout_marginBottom="1px"
+			android:layout_marginRight="0.1px"
+			android:background="#CE6E6B"
+			></Button>
+	<Button android:id="@+id/Tyugoku"
+			android:text="中国"
+			android:layout_toLeftOf="@id/Kinki"
+			android:layout_alignTop="@id/Kinki"
+			android:layout_width="60px" 
+			android:layout_height="50px"
+			android:layout_marginBottom="1px"
+			android:layout_marginRight="0.1px"
+			android:background="#CDBF85"
+			></Button>
+	<Button android:id="@+id/Shikoku"
+			android:text="四国"
+			android:layout_below="@id/Tyugoku"
+			android:layout_alignLeft="@id/Tyugoku"
+			android:layout_width="60px" 
+			android:layout_height="50px"
+			
+			android:background="#CDBF85"
+			></Button>	
+	<Button android:id="@+id/Kyushu"
+			android:text="九州/沖縄"
+			android:layout_alignTop="@id/Shikoku"
+			android:layout_toLeftOf="@id/Tyugoku"
+			android:layout_width="60px" 
+			android:layout_height="70px"
+			android:layout_marginRight="1px"
+			android:background="#CDCF8A"
+			></Button>									
+</RelativeLayout>
+
+
+	
+</LinearLayout>

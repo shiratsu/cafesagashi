@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#F9F5D6"
+  android:orientation="vertical">
+	<LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	  
+	     
+	<TextView 
+		  android:text="ヘルプ"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="80px"></TextView>
+</LinearLayout>
+<include layout="@layout/inc_ad" />
+	<ScrollView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:fadingEdgeLength="50dip"
+		    android:background="#F9F5D6">
+	    <LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<TextView
+	                android:id="@+id/text1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:padding="10px" />
+	                
+				<ImageView 
+					android:id="@+id/image1" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:scaleType="fitCenter"
+					android:src="@drawable/helppic">
+					</ImageView>
+				<TextView
+	                android:id="@+id/text2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:padding="10px" />
+	                
+				<ImageView 
+					android:id="@+id/image2" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:scaleType="fitCenter"
+					android:src="@drawable/help2">
+					</ImageView>
+				<TextView
+	                android:id="@+id/text3"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="#000000"
+	                android:padding="10px" />	
+		</LinearLayout>		
+	</ScrollView>
+			    
+</LinearLayout>

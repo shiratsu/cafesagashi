@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#F9F5D6"
+  android:orientation="vertical">
+ 
+<LinearLayout
+	  android:id="@+id/LayoutTop"
+	  android:layout_width="fill_parent"
+	  android:layout_height="43px"
+	  android:orientation="horizontal"
+	  android:background="@drawable/cafe_header_1"
+	  android:layout_alignParentTop="true">
+	  
+	  <Button android:id="@+id/topButton" 
+			android:layout_width="35px" 
+			android:layout_height="35px"
+			android:padding="4px"
+			android:layout_marginLeft="5px"
+			android:background="@drawable/icon3535"></Button>
+	  
+	     
+	<TextView 
+		  android:text="マスター更新"
+		  android:textSize="25sp"
+		  android:textColor="#FFFFFF"
+		  android:id="@+id/title" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="4px"
+		  android:paddingLeft="47px"></TextView>
+</LinearLayout> 
+<include layout="@layout/inc_ad" />
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+	<TextView android:text="" 
+			android:id="@+id/setsumeiText" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:padding="10px">
+	</TextView>
+	
+	<TextView android:text="最終更新日時" 
+			android:id="@+id/setsumeiText2" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:gravity="center">
+	</TextView>
+	<TextView android:text="" 
+			android:id="@+id/updateText" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:scaleType="fitCenter"
+			android:gravity="center_horizontal"
+			android:paddingBottom="20px">
+	</TextView>
+	<Button android:text="マスターデータ更新" 
+		android:id="@+id/dataUpdateButton" 
+		android:layout_width="fill_parent" 
+		android:layout_height="60px"></Button>
+
+</LinearLayout>
+
+</LinearLayout>

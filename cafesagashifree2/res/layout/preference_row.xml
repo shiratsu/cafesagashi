@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50px"
+    android:orientation="horizontal"
+    android:background="#F9F5D6">
+   	<ImageView android:id="@+id/storeImageView"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="10px" />
+	<CheckedTextView 
+        android:layout_width="fill_parent" 
+        android:layout_alignParentLeft="true" 
+        android:text="" 
+        android:id="@+id/prefChecked" 
+        android:layout_height="wrap_content" 
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="5px"
+        android:textColor="#000000">
+    </CheckedTextView>
+	
+</LinearLayout>

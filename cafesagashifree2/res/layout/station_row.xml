@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50px"
+    android:orientation="horizontal"
+    android:background="#F9F5D6"
+    >
+   
+<TextView android:text="@+id/stationText" 
+	android:id="@+id/stationName" 
+	android:layout_marginLeft="10px"
+    android:layout_marginTop="5px"
+    android:layout_marginBottom="5px"
+    android:padding="5px"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	
+	android:textColor="@xml/text_color_selector"></TextView>
+<TextView android:text="＞" 
+	android:id="@+id/yajirushi" 
+	android:gravity="right"
+	android:layout_marginLeft="10px"
+    android:layout_marginTop="5px"
+    android:layout_marginRight="5px"
+    android:padding="5px"    
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	
+	android:textColor="@xml/text_color_selector"
+	></TextView>
+</LinearLayout>

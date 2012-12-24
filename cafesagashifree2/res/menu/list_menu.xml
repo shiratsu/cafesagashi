@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:title="現在地更新"
+        android:id="@+id/now"
+        android:icon="@android:drawable/ic_menu_mylocation">
+  </item>
+  
+  <item android:title="検索オプション"
+        android:id="@+id/option"
+        android:icon="@android:drawable/ic_menu_search">
+  </item>
+  <!--<item android:title="カフェを追加"
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_menu_add">
+  </item>
+  
+  
+--></menu>
